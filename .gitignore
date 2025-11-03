@@ -1,7 +1,7 @@
 # --------------------------------
 # Maven Build Artifacts
 # --------------------------------
-/target/          # Compiled classes, test results, JARs/WARs produced by Maven
+target/          # Compiled classes, test results, JARs/WARs produced by Maven
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
