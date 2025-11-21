@@ -8,6 +8,8 @@ package org.cysecurity.cspf.jvl.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -41,7 +43,9 @@ public class Logout extends HttpServlet {
         }
         catch(Exception e)
         {
-            
+            // Remediation: Log the exception securely
+            Logger logger = Logger.getLogger(Logout.class.getName());
+            logger.log(Level.SEVERE, "Exception in processRequest", e);
         }
     }
 
